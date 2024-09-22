@@ -50,5 +50,12 @@ int main(void)
 	}
 	StudentDataIn.close();
 
+#ifdef _DEBUG
+	for (int i = 0; i < StudentData.size(); i++)
+	{
+		cout << StudentData[i].firstName << ", " << StudentData[i].lastName << endl;
+	}
+#endif
+
 	return 1;
 }
